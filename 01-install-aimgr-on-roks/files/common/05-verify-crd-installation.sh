@@ -28,7 +28,7 @@ while [[ ${RESOURCE_FOUND} == "false" && $LOOP_COUNT -lt $MAX_LOOP_COUNT ]]; do
         RESOURCE_FOUND=true
     else
         RESOURCE_FOUND=false
-        sleep 5
+        sleep 15
     fi
 done
 
