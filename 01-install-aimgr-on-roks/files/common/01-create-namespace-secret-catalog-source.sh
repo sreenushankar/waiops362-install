@@ -11,7 +11,7 @@ echo "1.1. Create namespace cp4waiops ..."
 echo "-----------------------------------"
 oc create namespace $NAMESPACE
 
-sleep 3
+sleep 5
 
 
 echo "-----------------------------------"
@@ -28,7 +28,7 @@ spec:
     - $NAMESPACE
 EOF
 
-sleep 3
+sleep 5
 
 ### Create secrets
 echo "-----------------------------------"
@@ -41,7 +41,7 @@ oc create secret docker-registry ibm-entitlement-key \
     --docker-server=cp.icr.io \
     --namespace=$NAMESPACE
 
-sleep 3
+sleep 5
 
 
 ### Ensure external traffic access to AI Manager
@@ -71,7 +71,7 @@ spec:
   image: icr.io/cpopen/ibm-operator-catalog:latest
 EOF
 
-sleep 15
+sleep 20
 
 echo "Process completed .... "
 
