@@ -21,7 +21,7 @@ spec:
   sourceNamespace: openshift-marketplace
 EOF
 
-sleep 5
+sleep 20
 
 echo "Process completed .... "
 
